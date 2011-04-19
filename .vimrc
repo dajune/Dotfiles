@@ -4,6 +4,7 @@ set nocompatible " explicitly get out of vi-compatible mode
 set noexrc " don't use local version of .(g)vimrc, .exrc
 set background=dark " we plan to use a dark background
 syntax on " syntax highlighting on
+set t_Co=256 " set terminal to 256 colors. Some themes needs this
 
 " General
 
@@ -19,12 +20,13 @@ set noerrorbells " don't make noise
 
 " Vim UI
 
-set cursorcolumn " highlight the current column
-" set cursorline " highlight current line
-set number " turn on line numbers
+" set cursorcolumn " highlight the current column
+set cursorline " highlight current line
+"set number " turn on line numbers
 set numberwidth=5 " We are good up to 99999 lines
 set ruler " Always show current positions along the bottom
 set showmatch " show matching brackets
+colorscheme xoria256"set theme
 
 " Text Formatting/Layout
 
@@ -35,4 +37,3 @@ set nowrap " do not wrap line
 set shiftwidth=4 " auto-indent amount when using cindent
 set softtabstop=4 " when hitting tab or backspace, how many spaces
 set tabstop=8 " real tabs should be 8
-

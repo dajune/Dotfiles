@@ -1,40 +1,90 @@
-! URxvt ----------------------------------------------------------------------
+! xpdf -----------------------------------------------------------------------
 !
-! URxvt*geometry:           107x33
-! URxvt*geometry:           80x25
-URxvt*faceName:           terminus:pixelsize=14
-! URxvt*faceName:           terminusbold:pixelsize=14
-! URxvt*font:             -*-dina-medium-r-*-*-17-*-*-*-*-*-*-*
-URxvt*dynamicColors:      true
-URxvt*utf8:               2
-URxvt*eightBitInput:      true
-URxvt*saveLines:          512
-URxvt*scrollTtyKeypress:  true
-URxvt*scrollTtyOutput:    false
-URxvt*scrollBar:          false 
-URxvt*rightScrollBar:     false 
-URxvt*jumpScroll:         true
-URxvt*multiScroll:        true
-URxvt*toolBar:            false
-
-
+ xpdf*enableFreetype:    yes
+ xpdf*antialias:         yes
+ xpdf*foreground:        black
+ xpdf*background:        white
+ xpdf*urlCommand:        /usr/bin/google-chrome %s
 !
-!!Theme Ten
-urxvt*background: rgb:1a/1a/1a
-urxvt*foreground: rgb:d6/d6/d6
-*color0:     rgb:00/00/00
-*color1:     rgb:98/56/5e
-*color2:     rgb:66/82/5d
-*color3:     rgb:96/91/76
-*color4:     rgb:4d/65/85
-*color5:     rgb:96/73/95
-*color6:     rgb:5f/7f/7b
-*color7:     rgb:b3/b3/b3
-*color8:     rgb:73/73/73
-*color9:     rgb:cf/a3/a9
-*color10:    rgb:ca/f7/bb
-*color11:    rgb:ff/f8/bc
-*color12:    rgb:83/a3/be
-*color13:    rgb:bb/a9/cf
-*color14:    rgb:96/cc/cc
-*color15:    rgb:ff/ff/ff
+! ! Xft settings ---------------------------------------------------------------
+!
+ Xft.dpi:                96
+ Xft.antialias:          true
+ Xft.rgba:               rgb
+ Xft.hinting:            true
+ Xft.hintstyle:          hintslight
+!
+! ! xterm ----------------------------------------------------------------------
+!
+ xterm*geometry:           80x25
+ xterm*faceName:           xft:Dejavu Sans Mono:pixelsize=14:antialias=true
+ xterm*dynamicColors:      true
+ xterm*utf8:               2
+ xterm*eightBitInput:      true
+ xterm*saveLines:          512
+ xterm*scrollTtyKeypress:  true
+ xterm*scrollTtyOutput:    false
+ xterm*scrollBar:          true
+ xterm*rightScrollBar:     true
+ xterm*loginShell:         true
+ xterm*jumpScroll:         true
+ xterm*multiScroll:        true
+ xterm*toolBar:            false
+ xterm*background: #242424
+ xterm*foreground: #ffffff
+!
+!
+! !------------------------------------------------------------------------------
+! ! c o l o r -  s e t t i n g s
+!
+!
+!
+!
+ *foreground: #DDEEDD
+ *background: #1C1C1C
+!
+! !black
+ *color0: #1C1C1C
+ *color8: #4d4d4d
+! !red
+ *color1: #D81860
+ *color9: #F00060
+! !green
+ *color2: #B7CE42
+ *color10: #BDE077
+! !yellow
+ *color3: #FEA63C
+ *color11: #FFE863
+! !blue
+ *color4: #66AABB
+ *color12: #AACCBB
+! !magenta
+ *color5: #B7416E
+ *color13: #BB4466
+! !cyan
+ *color6: #5E7175
+ *color14: #A3BABF
+! !white
+ *color7: #DDEEDD
+ *color15: #6C887A
+!
+!
+!
+! !------------------------------------------------------------------------------
+! ! u r x v t
+!
+ URxvt*geometry:             112x22  
+ URxvt*font:                 xft:profont:pixelsize=13
+ URxvt*boldFont:             xft:profont:pixelsize=13 
+ URxvt*scrollBar:            false
+ URxvt*scrollBar_right:      true
+ URxvt*scrollColor:          #000000
+ URxvt.perl-ext-common:      default,matcher
+ URxvt.urlLauncher:          google-chrome 
+ URxvt.matcher.button:       1
+ URxvt*matcher.pattern.1:    \\b(mailto|http|https|ftp|file):[/]*[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+ URxvt*matcher.pattern.2:    \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+
+ URxvt*inheritPixmap:        true
+ URxvt*tintColor:            white
+ URxvt*shading:              15
